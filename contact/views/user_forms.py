@@ -8,8 +8,6 @@ from contact.forms import RegisterForm
 def register(request):
     form = RegisterForm()
 
-    messages.info(request, 'Um texto qualquer')
-
     if request.method == 'POST':
         form = RegisterForm(request.POST)
 
